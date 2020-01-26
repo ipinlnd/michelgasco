@@ -3,7 +3,7 @@
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #20141E;
+    background-color: #20141e;
 }
 
 .HeaderImage {
@@ -20,21 +20,10 @@
     top: 10%;
     right: 15%;
     font-size: 50px;
-    color: #955A20;
+    color: #955a20;
     text-align: center;
     width: 350px;
     text-align: center;
-}
-
-@media only screen and (max-width: 900px) {
-    .HeaderTitle {
-        position: unset;
-        top: 0;
-        right: 0;
-        padding: 0;
-        margin: 0;
-        width: 100%;
-    }
 }
 
 .HeaderMoreInfoContainer {
@@ -51,28 +40,152 @@
 .HeaderMoreInfo {
     font-size: 25px;
     font-weight: normal;
-    color: #955A20;
+    color: #955a20;
     padding: 1%;
     width: 40%;
-    border: solid 2px #955A20;
+    border: solid 2px #955a20;
 }
 
 .HeaderMoreInfo:hover {
     background-color: #ffffff11;
 }
 
-.Section {
+.Row {
     width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.Section1 {
+    width: 50%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #20141E;
+    background-color: #20141e;
+    padding-bottom: 5%;
+    position: relative;
 }
 
-.SectionHeader {
+.BackImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.Section1 h1 {
     font-size: 40px;
     color: #916633;
     text-align: center;
-    width: 350px;
+    z-index: 5;
+}
+
+.Section1 div {
+    color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+.Section1 button {
+    padding: 2% 5%;
+    border: solid 2px #916633;
+    color: #916633;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.Section1 button:hover {
+    background-color: #ffffff11;
+}
+
+.Section2 {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e2030;
+    padding-bottom: 5%;
+    position: relative;
+}
+
+.Section2 h1 {
+    font-size: 40px;
+    color: #91cccf;
+    text-align: center;
+    z-index: 5;
+}
+
+.Section2 div {
+    color: white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+}
+
+.Section2 button {
+    padding: 2% 5%;
+    border: solid 2px #91cccf;
+    color: #91cccf;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.Section2 button:hover {
+    background-color: #ffffff11;
+}
+
+.Contact {
+    width: 90%;
+    background-color: #20141e;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.Contact h1 {
+    font-size: 40px;
+    color: #91cccf;
+    text-align: center;
+    z-index: 5;
+}
+
+.Contact h2 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 900px) {
+    .HeaderTitle {
+        position: unset;
+        top: 0;
+        right: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .Row {
+        flex-direction: column;
+    }
+    .Section1 {
+        width: 100%;
+    }
+    .Section2 {
+        width: 100%;
+    }
 }
