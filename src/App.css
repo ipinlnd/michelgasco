@@ -1,9 +1,18 @@
 .App {
+    width: 100%;
+    background-color: #20141e;
     width: 100vw;
     height: 100vh;
+    max-width: 1920px;
+}
+
+#root {
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #20141e;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .HeaderImage {
@@ -91,6 +100,7 @@
     flex-direction: column;
     align-items: center;
     z-index: 5;
+    justify-content: space-between;
 }
 
 .Section1 button {
@@ -170,6 +180,49 @@
     z-index: 5;
 }
 
+.Biography {
+    width: 100%;
+}
+
+.Relative {
+    position: relative;
+}
+
+.Section2 .BulletPoints h3:hover {
+    background-color: #91cccf99;
+}
+
+.Section1 .BulletPoints h3:hover {
+    background-color: #91663399;
+}
+
+.Section2 .BulletPoints {
+    background-color: #91cccf11;
+    color: white;
+    margin-top: 110px;
+    text-align: left;
+    width: 90%;
+    padding-left: 1%;
+}
+
+.Section1 .BulletPoints {
+    background-color: #91663322;
+    color: white;
+    margin-top: 110px;
+    text-align: left;
+    width: 90%;
+    padding-left: 1%;
+}
+
+.BulletPoints h3 {
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+    padding: 1%;
+    cursor: pointer;
+    margin: 1%;
+}
+
 @media only screen and (max-width: 900px) {
     .HeaderTitle {
         position: unset;
@@ -181,6 +234,9 @@
     }
     .Row {
         flex-direction: column;
+    }
+    .Reverse {
+        flex-direction: column-reverse;
     }
     .Section1 {
         width: 100%;

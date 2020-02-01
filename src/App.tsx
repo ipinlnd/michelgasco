@@ -15,7 +15,7 @@ const App: React.FC = () => {
         <img src={header} />
       </div>
       <div className="Row">
-        <div className="Section1">
+        <div className="Section1 Biography">
           <img className="BackImage" src={bio} />
           <h1>Biography</h1>
           <div>
@@ -23,9 +23,36 @@ const App: React.FC = () => {
             <button>Read More</button>
           </div>
         </div>
+      </div>
+      <div className="Row Relative">
+        <img className="BackImage" src={music} />
         <div className="Section2">
-          <img className="BackImage" src={music} />
           <h1>Music</h1>
+          <div>
+            <p>{loremIpsum}</p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div className="Section2">
+          <div className="BulletPoints">
+            <h3>Orontes </h3>
+            <h3>Badieh </h3>
+            <h3>Vandalus </h3>
+            <h3>Bab Sharqi </h3>
+          </div>
+        </div>
+      </div>
+      <div className="Row Relative Reverse">
+        <img className="BackImage" src={documentaries} />
+        <div className="Section1">
+          <div className="BulletPoints">
+            <h3>Nassim, the territory of memory </h3>
+            <h3>Other documentaries 1 </h3>
+            <h3>Other documentaries 2 </h3>
+          </div>
+        </div>
+        <div className="Section1">
+          <h1>Documentaries</h1>
           <div>
             <p>{loremIpsum}</p>
             <button>Read More</button>
@@ -34,19 +61,18 @@ const App: React.FC = () => {
       </div>
       <div className="Row">
         <div className="Section2">
-          <img className="BackImage" src={documentaries} />
-          <h1>Documentaries</h1>
+          <img className="BackImage" src={concerts} />
+          <h1>Concerts</h1>
           <div>
             <p>{loremIpsum}</p>
             <button>Read More</button>
           </div>
         </div>
-        <div className="Section1">
-          <img className="BackImage" src={concerts} />
-          <h1>Concerts and news</h1>
+        <div className="Section2">
+          <h1>News</h1>
           <div>
             <p>{loremIpsum}</p>
-            <button>Read More</button>
+            <button>Go to the blog</button>
           </div>
         </div>
       </div>
